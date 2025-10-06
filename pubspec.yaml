@@ -1,0 +1,46 @@
+name: sdu
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Навигация
+  auto_route: ^10.1.0+1
+
+  # Для SVG-изображений (нужен, раз включаем flutter_svg интеграцию)
+  flutter_svg: ^2.0.10+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # Генераторы
+  flutter_gen_runner: ^5.5.0
+  build_runner: ^2.4.15
+  auto_route_generator: ^10.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/png/
+    - assets/svg/
+    - assets/icons/
+
+flutter_gen:
+  # Куда положить assets.gen.dart
+  output: lib/core/assets
+  line_length: 80
+  integrations:
+    flutter_svg: true
