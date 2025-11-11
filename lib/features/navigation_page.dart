@@ -38,6 +38,17 @@ class NavigationPage extends StatelessWidget {
                 trailing: Icon(Icons.arrow_forward_ios_sharp),
               ),
             ),
+          ),
+          InkWell(
+            onTap: () {
+              context.pushRoute(NewsRoute());
+            },
+            child: Container(
+              child: ListTile(
+                title: Text('#3 assignment'),
+                trailing: Icon(Icons.arrow_forward_ios_sharp),
+              ),
+            ),
           )
         ],
       ),

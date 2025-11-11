@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:sdu/features/mobile_education/login_education_page.dart';
 import 'package:sdu/features/mobile_education/reset_password_page.dart';
 import 'package:sdu/features/mobile_education/splash_page.dart';
+import 'package:sdu/features/news/presentation/pages/news_page.dart';
 
 import 'router.gr.dart';
 
@@ -33,6 +34,9 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(
           page: ResetPasswordRoute.page,
+        ),
+        AutoRoute(
+          page: NewsRoute.page,
         ),
       ];
 }
